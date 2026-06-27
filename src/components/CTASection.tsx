@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Send } from "lucide-react";
 
-const SHEET_URL = "YOUR_APPS_SCRIPT_WEB_APP_URL"; // paste your deployed URL here
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbzFEzsnfG2UvHQJLfr58axUbeuUp2mUx3MjQbN8y70OCHip1e3jMGuC55IIeIHE1mrlaQ/exec"; // paste your deployed URL here
 
 type FormData = {
   companyName: string;
