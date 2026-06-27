@@ -1,14 +1,14 @@
 export default function Hero() {
   return (
     <section className="w-full bg-gradient-to-br from-slate-50 to-white">
-      <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-8 md:px-12 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
         {/* Left content */}
         <div>
           <span className="inline-block bg-blue-50 text-[#0B2C5E] text-xs font-bold tracking-wide uppercase px-4 py-1.5 rounded-full border border-blue-100">
             Logistics Reimagined
           </span>
 
-          <h1 className="mt-6 text-5xl font-bold leading-tight">
+          <h1 className="mt-6 text-3xl md:text-5xl font-bold leading-tight">
             <span className="text-[#0B2C5E]">India's Trusted Driver</span>
             <br />
             <span className="text-green-700">Management Partner</span>

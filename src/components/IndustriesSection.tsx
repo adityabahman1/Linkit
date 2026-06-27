@@ -10,8 +10,8 @@ const industries = [
 
 export default function IndustriesSection() {
   return (
-    <section className="w-full bg-[#0B1A3D] py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="w-full bg-[#0B1A3D] py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-8 md:px-12">
         {/* Heading row */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <div>
@@ -29,7 +29,7 @@ export default function IndustriesSection() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-5">
           {industries.map((item) => {
             const Icon = item.icon;
             return (

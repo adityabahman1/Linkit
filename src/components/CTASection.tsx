@@ -54,8 +54,8 @@ export default function CTASection() {
   };
 
   return (
-    <section className="w-full bg-slate-50 py-20">
-      <div className="max-w-3xl mx-auto px-6 text-center">
+    <section className="w-full bg-slate-50 py-12 md:py-20">
+      <div className="max-w-3xl mx-auto px-8 md:px-12 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#0B2C5E]">
           Ready to Optimize Your Fleet Operations?
         </h2>
@@ -66,7 +66,7 @@ export default function CTASection() {
 
         <form
           onSubmit={handleSubmit}
-          className="mt-12 bg-white rounded-3xl shadow-lg p-8 md:p-10 text-left"
+          className="mt-12 bg-white rounded-3xl shadow-lg p-6 md:p-10 text-left"
         >
           <div className="grid md:grid-cols-2 gap-6">
             <Field

@@ -1,7 +1,7 @@
 export default function AboutSection() {
   return (
-    <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <section className="w-full bg-white py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-8 md:px-12 grid md:grid-cols-2 gap-16 items-center">
         {/* Left content */}
         <div>
           <div className="w-12 h-1 bg-green-400 rounded-full mb-6" />
@@ -43,7 +43,7 @@ export default function AboutSection() {
         </div>
 
         {/* Right images */}
-        <div className="relative h-[480px]">
+        <div className="relative h-[400px] md:h-[480px]">
           {/* Back image */}
           <div className="absolute top-0 right-0 w-64 h-80 rounded-2xl overflow-hidden shadow-lg">
             <img

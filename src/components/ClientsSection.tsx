@@ -7,8 +7,8 @@ const clients = [
 
 export default function ClientsSection() {
   return (
-    <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+    <section className="w-full bg-white py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-8 md:px-12 text-center">
         <p className="text-xs font-bold tracking-wider text-green-600 uppercase">
           Partnership Spotlight
         </p>

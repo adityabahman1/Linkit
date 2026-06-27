@@ -6,7 +6,7 @@ const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
 export default function Footer() {
   return (
     <footer className="w-full bg-[#0B2C5E]">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-8 md:px-12 py-12 md:py-16">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand column */}
           <div>
@@ -97,7 +97,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-8 md:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-blue-200">
             © 2024 Linkit Logistics. All rights reserved.
           </p>

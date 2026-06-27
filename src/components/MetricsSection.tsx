@@ -7,8 +7,8 @@ const metrics = [
 
 export default function MetricsSection() {
   return (
-    <section className="w-full bg-[#0B2C5E] py-16">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+    <section className="w-full bg-[#0B2C5E] py-12 md:py-16">
+      <div className="max-w-7xl mx-auto px-8 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
         {metrics.map((metric) => (
           <div key={metric.label}>
             <p className="text-4xl md:text-5xl font-extrabold text-green-400">
