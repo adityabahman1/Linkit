@@ -14,11 +14,8 @@ export default function Footer() {
               <img
                 src="/logo.png"
                 alt="Linkit Logistics"
-                className="h-8 w-8 object-contain"
+                className="h-16 md:h-20 w-auto object-contain"
               />
-              <span className="text-xl font-bold text-white">
-                Linkit Logistics
-              </span>
             </div>
             <p className="mt-5 text-blue-200 leading-relaxed max-w-xs">
               Empowering enterprises through professional driver management

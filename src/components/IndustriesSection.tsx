@@ -22,10 +22,7 @@ export default function IndustriesSection() {
               Tailored Solutions for Diverse Industries
             </h2>
           </div>
-          <p className="text-blue-200 max-w-xs md:text-right">
-            Our expertise spans across critical infrastructure and logistics
-            domains across India.
-          </p>
+          
         </div>
 
         {/* Cards */}

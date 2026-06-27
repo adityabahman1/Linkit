@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <section className="w-full bg-white py-12 md:py-20">
+    <section id="about" className="w-full bg-white py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-8 md:px-12 grid md:grid-cols-2 gap-16 items-center">
         {/* Left content */}
         <div>
@@ -43,35 +43,36 @@ export default function AboutSection() {
         </div>
 
         {/* Right images */}
-        <div className="relative h-[400px] md:h-[480px]">
+        <div className="relative h-[300px] md:h-[550px] lg:h-[400px]">
           {/* Back image */}
-          <div className="absolute top-0 right-0 w-64 h-80 rounded-2xl overflow-hidden shadow-lg">
+          <div className="absolute top-0 right-0 w-48 h-64 md:w-64 md:h-80 rounded-2xl overflow-hidden shadow-lg">
             <img
               src="/about-buses.jpg"
-              alt="Fleet of buses with operations staff"
+              alt="Professional bus driver"
               className="w-full h-full object-cover"
             />
           </div>
 
           {/* Front image */}
-          <div className="absolute top-12 left-0 w-72 h-80 rounded-2xl overflow-hidden shadow-xl">
+          <div className="absolute top-8 left-0 w-56 h-72 md:w-72 md:h-80 rounded-2xl overflow-hidden shadow-xl">
             <img
               src="/about-driver.jpg"
-              alt="Professional driver with truck"
+              alt="Professional truck driver"
               className="w-full h-full object-cover"
             />
           </div>
 
           {/* Floating card */}
-          <div className="absolute bottom-4 left-0 bg-white rounded-xl shadow-lg p-5 w-52">
-            <p className="text-2xl font-extrabold text-[#0B2C5E]">
+          <div className="absolute bottom-4 left-0 bg-white rounded-xl shadow-lg p-4 md:p-5 w-44 md:w-52">
+            <p className="text-xl md:text-2xl font-extrabold text-[#0B2C5E]">
               PAN INDIA
             </p>
-            <p className="mt-1 text-sm text-gray-500">
+            <p className="mt-1 text-xs md:text-sm text-gray-500">
               Operational Presence
             </p>
           </div>
         </div>
+
       </div>
     </section>
   );

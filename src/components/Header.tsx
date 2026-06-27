@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "#home" },
   { label: "About Us", href: "#about" },
-  { label: "Services", href: "#services" },
+  { label: "Services", href: "#cta" },
 ];
 
 export default function Header() {
@@ -13,17 +13,14 @@ export default function Header() {
 
   return (
     <header className="w-full border-b border-gray-200 bg-white sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 md:px-12 py-4">
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-8 md:px-12 py-1.5">
         {/* Logo + Brand */}
         <div className="flex items-center gap-2">
           <img
             src="/logo.png"
             alt="Linkit Logistics"
-            className="h-8 w-8 object-contain"
+            className="h-16 md:h-20 w-auto object-contain"
           />
-          <span className="text-xl font-bold text-[#0B2C5E]">
-            Linkit Logistics
-          </span>
         </div>
 
         {/* Desktop Nav Links */}
@@ -32,11 +29,10 @@ export default function Header() {
             <a
               key={link.label}
               href={link.href}
-              className={`text-sm font-medium pb-1 transition-colors ${
-                active === link.label
+              className={`text-sm font-medium pb-1 transition-colors ${active === link.label
                   ? "text-[#0B2C5E] border-b-2 border-[#0B2C5E]"
                   : "text-gray-600 hover:text-[#0B2C5E]"
-              }`}
+                }`}
             >
               {link.label}
             </a>
@@ -44,9 +40,12 @@ export default function Header() {
         </nav>
 
         {/* Desktop CTA Button */}
-        <button className="hidden md:block bg-[#0B2C5E] text-white text-sm font-semibold px-5 py-2.5 rounded-md hover:bg-[#0a2450] transition-colors">
+        <a
+          href="#cta"
+          className="hidden md:block bg-[#0B2C5E] text-white text-sm font-semibold px-5 py-2.5 rounded-md hover:bg-[#0a2450] transition-colors"
+        >
           Partner With Us
-        </button>
+        </a>
 
         {/* Mobile Menu Button */}
         <button
@@ -66,19 +65,23 @@ export default function Header() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className={`text-lg font-semibold transition-colors ${
-                  active === link.label ? "text-[#0B2C5E]" : "text-gray-600"
-                }`}
+                className={`text-lg font-semibold transition-colors ${active === link.label ? "text-[#0B2C5E]" : "text-gray-600"
+                  }`}
               >
                 {link.label}
               </a>
             ))}
           </nav>
-          <button className="w-full bg-[#0B2C5E] text-white font-bold py-4 rounded-xl">
+          <a
+            href="#cta"
+            onClick={() => setIsMenuOpen(false)}
+            className="w-full bg-[#0B2C5E] text-white font-bold py-4 rounded-xl text-center"
+          >
             Partner With Us
-          </button>
+          </a>
         </div>
       )}
+
     </header>
   );
 }

@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="w-full bg-gradient-to-br from-slate-50 to-white">
+    <section id="home" className="w-full bg-gradient-to-br from-slate-50 to-white -mt-12">
       <div className="max-w-7xl mx-auto px-8 md:px-12 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
         {/* Left content */}
         <div>
@@ -34,7 +34,7 @@ export default function Hero() {
         {/* Right image */}
         <div className="relative">
           <div className="absolute -inset-4 bg-gradient-to-tr from-green-200/40 via-transparent to-blue-200/40 rounded-3xl blur-2xl -z-10" />
-          <div className="rounded-3xl overflow-hidden border-4 border-white shadow-xl">
+          <div className="rounded-3xl overflow-hidden border-4 border-white shadow-xl h-[300px] md:h-[450px]">
             <img
               src="/hero-drivers.jpg"
               alt="Professional drivers with logistics trucks"
