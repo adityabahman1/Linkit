@@ -5,50 +5,56 @@ const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#0B2C5E]">
+    <footer className="w-full bg-white shadow-[0_-1px_10px_rgba(0,0,0,0.05)]">
       <div className="max-w-7xl mx-auto px-8 md:px-12 py-12 md:py-16">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand column */}
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center">
               <img
-                src="/logo.png"
+                src="/logotrans.png"
                 alt="Linkit Logistics"
-                className="h-16 md:h-20 w-auto object-contain"
+                className="h-28 md:h-32 w-auto object-contain"
               />
             </div>
-            <p className="mt-5 text-blue-200 leading-relaxed max-w-xs">
+
+            <p className="mt-5 text-gray-600 leading-relaxed max-w-sm text-base">
               Empowering enterprises through professional driver management
               and infrastructure as a service. Operating across PAN India
-              with a focus on reliability and precision.
+              with a focus on reliability, efficiency, and precision.
             </p>
+
             <div className="mt-6 flex gap-3">
               <a
                 href="#"
                 aria-label="Share"
-                className="w-10 h-10 rounded-lg border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+                className="w-10 h-10 rounded-lg border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition-colors"
               >
-                <Share2 className="w-4 h-4" />
+                <Share2 className="w-5 h-5" />
               </a>
+
               <a
                 href="mailto:info@linkitlogistics.com"
                 aria-label="Email"
-                className="w-10 h-10 rounded-lg border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+                className="w-10 h-10 rounded-lg border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition-colors"
               >
-                <Mail className="w-4 h-4" />
+                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
 
-          {/* Quick links */}
+          {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold text-lg">Quick Links</h3>
-            <ul className="mt-5 space-y-3">
+            <h3 className="text-gray-900 font-bold text-xl">
+              Quick Links
+            </h3>
+
+            <ul className="mt-5 space-y-4">
               {quickLinks.map((link) => (
                 <li key={link}>
                   <a
                     href="#"
-                    className="text-blue-200 hover:text-white transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
                   >
                     {link}
                   </a>
@@ -59,29 +65,34 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold text-lg">Contact</h3>
-            <ul className="mt-5 space-y-4">
+            <h3 className="text-gray-900 font-bold text-xl">
+              Contact
+            </h3>
+
+            <ul className="mt-5 space-y-5">
               <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-green-400 shrink-0" />
+                <Phone className="w-5 h-5 text-green-600 shrink-0" />
                 <a
                   href="tel:+919588376072"
-                  className="text-blue-200 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   +91-9588376072
                 </a>
               </li>
+
               <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-green-400 shrink-0" />
+                <Mail className="w-5 h-5 text-green-600 shrink-0" />
                 <a
                   href="mailto:info@linkitlogistics.com"
-                  className="text-blue-200 hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   info@linkitlogistics.com
                 </a>
               </li>
+
               <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-green-400 shrink-0 mt-1" />
-                <span className="text-blue-200">
+                <MapPin className="w-5 h-5 text-green-600 shrink-0 mt-1" />
+                <span className="text-gray-600">
                   Pan India
                   <br />
                   Operations Center
@@ -92,18 +103,19 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-white/10">
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-8 md:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-blue-200">
+          <p className="text-sm text-gray-500 text-center md:text-left">
             © 2024 Linkit Logistics. All rights reserved.
           </p>
-          <div className="flex gap-6">
+
+          <div className="flex flex-wrap justify-center gap-6">
             {legalLinks.map((link) => (
               <a
                 key={link}
                 href="#"
-                className="text-sm text-blue-200 hover:text-white transition-colors"
+                className="text-sm text-gray-500 hover:text-blue-600 transition-colors"
               >
                 {link}
               </a>
