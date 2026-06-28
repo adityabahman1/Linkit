@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-8 md:px-12 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
         {/* Left content */}
         <div>
-          <span className="inline-block bg-blue-50 text-[#0B2C5E] text-xs font-bold tracking-wide uppercase px-4 py-1.5 rounded-full border border-blue-100">
+          <span className="inline-block mt-8 md:mt-0 bg-blue-50 text-[#0B2C5E] text-xs font-bold tracking-wide uppercase px-4 py-1.5 rounded-full border border-blue-100">
             Logistics Reimagined
           </span>
 
@@ -21,13 +21,19 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <button className="bg-[#0B2C5E] text-white font-semibold px-6 py-3.5 rounded-lg flex items-center gap-2 hover:bg-[#0a2450] transition-colors">
+            <a
+              href="#cta"
+              className="bg-[#0B2C5E] text-white font-semibold px-6 py-3.5 rounded-lg flex items-center gap-2 hover:bg-[#0a2450] transition-colors"
+            >
               Hire Professional Drivers
               <span aria-hidden="true">→</span>
-            </button>
-            <button className="border border-gray-300 text-[#0B2C5E] font-semibold px-6 py-3.5 rounded-lg hover:bg-gray-50 transition-colors">
+            </a>
+            <a
+              href="#cta"
+              className="border border-gray-300 text-[#0B2C5E] font-semibold px-6 py-3.5 rounded-lg hover:bg-gray-50 transition-colors"
+            >
               View Solutions
-            </button>
+            </a>
           </div>
         </div>
 
